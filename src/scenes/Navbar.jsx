@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import useMediaQuery from "../hooks/useMediaQuery"
 import menuIcon from "../assets/menu-icon.svg"
 import closeIcon from "../assets/close-icon.svg"
+import sigYellow from "../assets/sigYellow.png"
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase()
@@ -27,9 +28,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     : "bg-sand transition duration-200"
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-3`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-Franklin text-3xl font-bold">AH</h4>
+        <img src={sigYellow} alt="sig-yellow" className="max-w-[100px]" />
+        {/* <h4 className="font-Franklin text-3xl font-bold">AH</h4> */}
 
         {/* desktop nav */}
         {isAboveSmallScreens ? (

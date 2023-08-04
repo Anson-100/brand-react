@@ -15,10 +15,10 @@ const Landing = ({ setSelectedPage }) => {
       {/* IMAGE SECTION  */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20  before:w-full before:max-w-[400px] before:h-2/3 before:border-2 before:border-gold before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20  before:w-full before:max-w-[400px] before:h-2/3  before:z-[-1]">
             <img
               alt="profile"
-              className="hover:filer hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
+              className="hover:filer hover:saturate-200 transition duration-500 z-10 w-full  md:max-w-[400px]"
               src={smile}
             />
           </div>
@@ -43,7 +43,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-Bodini z-10 text-center md:text-start">
+          <p className="text-6xl font-Franklin z-10 text-center md:text-start">
             Anson {""}
             <span className="xs: relative xs: text-gold xs:font-semibold z-20 xs:before:content-# before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
               Hunnell
@@ -66,13 +66,13 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainbow-light text-purple rounded-sm py-3 px-7 font-semibold hover:bg-airPlant hover:text-white transition duration-500"
+            className="bg-gradient-rainbow-light text-cyberspace rounded-sm py-3 px-7 font-semibold hover:bg-airPlant hover:text-gold transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
+          {/* <AnchorLink
             className="rounded-r-sm bg-gradient-rainbow-light py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -80,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
             <div className="bg-pureWhite hover:text-gold transition duration-500 w-full h-full flex items-center font-Franklin px-10">
               Let's Talk
             </div>
-          </AnchorLink>
+          </AnchorLink> */}
         </motion.div>
         <motion.div
           className="flex mt-5 justify-center md:justify-start"

@@ -9,8 +9,8 @@ module.exports = {
         paladiumBlue: "#C4DFDF",
         spanishMoss: "#D2E9E9",
         airPlant: "#E3F4F4",
-        sand: "#F8F6F4",
-        pureWhite: "#F5F5F5",
+        sand: "#F2F3F3",
+        pureWhite: "#FFFFFF",
         purple: "#982176",
         gold: "#F1C93B",
         // dark theme
@@ -21,7 +21,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         "gradient-rainbow-light":
-          "linear-gradient(90deg, #F6D7A7 11%,#F6EABE 33%,#C8E3D4 57%, #87AAAA 77%)",
+          "linear-gradient(90deg, #F2F3F3 44%, #FFFFFF 77%)",
         "gradient-rainbow-dark":
           "linear-gradient(74.44deg, #046582 9%,#6E7582 20%,#BB8082 37%, #F39189 44%)",
       }),
